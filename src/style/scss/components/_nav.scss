@@ -63,19 +63,23 @@
         }
     }
 
-    &__links-item {
+    &__links-list-item {
         display: block;
         width: 76px;
         height: 100%;
-        font-size: 13px;
-        color: $clr-gray;
-        text-transform: uppercase;
         text-align: center;
-        line-height: var(--nav-height);
 
         &--active,
         &:hover {
             background: $clr-red;
+            cursor: pointer;
         }
+    }
+
+    &__links-link {
+        font-size: 13px;
+        color: $clr-gray;
+        text-transform: uppercase;
+        line-height: var(--nav-height);
     }
 }
