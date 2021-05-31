@@ -1,0 +1,16 @@
+.circle-decorator {
+    height: 71px;
+    width: 71px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    //TODO: set background size
+
+    &--color--red {
+        background-color: $clr-red;
+    }
+
+    &--color--black {
+        background-color: $clr-black;
+    }
+}
