@@ -38,19 +38,19 @@
         background: url("../../img/site-logo.svg");
     }
 
-    &__description {
+    &__title {
         max-width: max-content;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
         font-size: 31px;
         color: $clr-gray;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
 
-    &__description-item {
+    &__title-item {
         display: block;
 
-        &:first-child {
+        &--with-decorator {
             display: flex;
             justify-content: space-between;
             align-items: center;
