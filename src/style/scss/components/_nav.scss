@@ -1,0 +1,81 @@
+.nav {
+    --nav-height: 80px;
+
+    display: flex;
+    justify-content: center;
+    height: var(--nav-height);
+    background: $clr-black;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__logo {
+        display: block;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: $clr-gray;
+        cursor: pointer;
+    }
+
+    &__burger-btn {
+        position: relative;
+        height: 15px;
+        width: 25px;
+
+        @include sm {
+            display: none;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 4px;
+            width: 100%;
+            background: $clr-gray;
+        }
+
+        &:after {
+            top: 70%;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__links-list {
+        display: none;
+
+        @include sm {
+            display: flex;
+            align-items: center;
+            width: 411px;
+            height: 100%;
+        }
+    }
+
+    &__links-item {
+        display: block;
+        width: 76px;
+        height: 100%;
+        font-size: 13px;
+        color: $clr-gray;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: var(--nav-height);
+
+        &--active,
+        &:hover {
+            background: $clr-red;
+        }
+    }
+}
