@@ -58,7 +58,7 @@
         @include sm {
             display: flex;
             align-items: center;
-            width: 411px;
+            max-width: 411px;
             height: 100%;
         }
     }
