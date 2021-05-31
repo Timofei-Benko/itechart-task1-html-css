@@ -1,14 +1,12 @@
 const gulp = require("gulp");
 const del = require("del");
 const sass = require("gulp-sass");
-const sourcemaps = require('gulp-sourcemaps');
-const gulpResolveUrl = require('gulp-resolve-url');
+// const sourcemaps = require('gulp-sourcemaps');
+// const gulpResolveUrl = require('gulp-resolve-url');
 
 gulp.task('styles', () => {
-    return gulp.src('./src/style/scss/**/*.scss', { base: './src'})
-        .pipe(sourcemaps.init())
+    return gulp.src('./src/style/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulpResolveUrl())
         .pipe(gulp.dest('./src/style/css'));
 });
 
