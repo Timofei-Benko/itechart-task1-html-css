@@ -1,0 +1,27 @@
+{
+  "name": "itechart-task1-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timofei-Benko/itechart-task1-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timofei-Benko/itechart-task1-html-css/issues"
+  },
+  "homepage": "https://github.com/Timofei-Benko/itechart-task1-html-css#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
