@@ -1,5 +1,5 @@
 ### Task 1 – HTML / CSS
 
-Console cmds:
-1. ```npm run start``` converts scss to css
-1. ```npm run watch``` watches change in styles
+Scripts:
+1. ```npm run scss``` converts scss to css and puts it in a separate directory (./src/style/css).
+1. ```npm run watch``` watches change in styles.
