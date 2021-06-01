@@ -8,11 +8,11 @@
     background-position: 70%;
 
     @include md {
-        background-size: 1850px;
+        background-size: 1920px;
         background-position: 70% 20%;
     }
 
-    @include xl {
+    @include rwd(1922) {
         background-size: 210%;
     }
 
