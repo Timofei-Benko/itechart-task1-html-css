@@ -1,15 +1,16 @@
 .circle-decorator {
+    display: block;
     height: 71px;
     width: 71px;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
 
-    &--color--red {
+    &--clr--red {
         background-color: $clr-red;
     }
 
-    &--color--black {
+    &--clr--black {
         background-color: $clr-black;
     }
 }
