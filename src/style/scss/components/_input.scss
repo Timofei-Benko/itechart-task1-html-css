@@ -1,0 +1,20 @@
+input {
+    --input-height: 42px;
+    height: var(--input-height);
+    padding: 0 16px;
+    font-family: $font-secondary;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+
+    &::placeholder {
+        font-size: 14px;
+        font-style: italic;
+        line-height: var(--input-height);
+    }
+
+    &:focus {
+        outline: none;
+        background-color: $clr-blue;
+    }
+}
