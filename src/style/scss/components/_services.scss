@@ -33,15 +33,15 @@
         margin-right: 31px;
 
         &--icon--rocket {
-            background: url("../../img/icon-rocket.png");
+            background-image: url("../../img/icon-rocket.png");
         }
 
         &--icon--shield {
-            background: url("../../img/icon-shield.png");
+            background-image: url("../../img/icon-shield.png");
         }
 
         &--icon--extinguisher {
-            background: url("../../img/icon-extinguisher.png");
+            background-image: url("../../img/icon-extinguisher.png");
         }
     }
 
@@ -63,10 +63,6 @@
 
     &__service-name {
         margin-bottom: 26px;
-        font-size: 21px;
-        color: $clr-black;
-        text-transform: uppercase;
-        letter-spacing: 1px;
 
         @include lg {
             white-space: nowrap;
@@ -77,18 +73,11 @@
         font-family: $font-secondary;
         font-size: 14px;
         color: $clr-gray-dark;
-        line-height: 25px;
 
-        &-link-more {
-            color: $clr-red;
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            &:visited {
-                color: $clr-red;
-            }
+        &::placeholder {
+            font-size: 14px;
+            font-style: italic;
+            line-height: var(--input-height);
         }
     }
 }

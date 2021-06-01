@@ -16,10 +16,6 @@
     &__title {
         max-width: 628px;
         margin-bottom: 39px;
-        font-size: 21px;
-        color: $clr-black;
-        text-transform: uppercase;
-        letter-spacing: 1px;
     }
 
     &__subtitle {
@@ -54,6 +50,7 @@
         &-description {
             margin-bottom: 37px;
             font-size: 14px;
+            color: $clr-gray-dark;
             line-height: 25px;
         }
 
