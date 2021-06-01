@@ -61,41 +61,38 @@
         <div class="content-container">
             <div class="services__container">
                 <div class="services__card">
-                    <div class="services__circle-decorator services__circle-decorator--icon--rocket circle-decorator circle-decorator--color--red"></div>
+                    <div class="services__circle-decorator services__circle-decorator--icon--rocket circle-decorator circle-decorator--clr--red"></div>
                     <div class="services__copy-container">
                         <div class="services__card-copy">
-                            <h2 class="services__service-name">Aliquam tincidunt</h2>
+                            <h2 class="title services__service-name">Aliquam tincidunt</h2>
                             <p class="services__service-description">
                                 Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                                dignissim pellentesq <a href="#" class="services__service-description-link-more">=>
-                            more</a>
+                                dignissim pellentesq <button class="btn-more">=> more</button>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="services__card">
-                    <div class="services__circle-decorator services__circle-decorator--icon--shield circle-decorator circle-decorator--color--red"></div>
+                    <div class="services__circle-decorator services__circle-decorator--icon--shield circle-decorator circle-decorator--clr--red"></div>
                     <div class="services__copy-container">
                         <div class="services__card-copy">
-                            <h2 class="services__service-name">Cras ornare tristiqu</h2>
+                            <h2 class="title services__service-name">Cras ornare tristiqu</h2>
                             <p class="services__service-description">
                                 Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                                dignissim pellentesq <a href="#" class="services__service-description-link-more">=>
-                                more</a>
+                                dignissim pellentesq <button class="btn-more">=> more</button>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="services__card">
-                    <div class="services__circle-decorator circle-decorator services__circle-decorator--icon--extinguisher circle-decorator--color--red"></div>
+                    <div class="services__circle-decorator circle-decorator services__circle-decorator--icon--extinguisher circle-decorator--clr--red"></div>
                     <div class="services__copy-container">
                         <div class="services__card-copy">
-                            <h2 class="services__service-name">Vivamus vestibulum</h2>
+                            <h2 class="title services__service-name">Vivamus vestibulum</h2>
                             <p class="services__service-description">
                                 Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
                                 dignissim pellentesq
-                                <a href="#" class="services__service-description-link-more">=>
-                                more</a>
+                                <button class="btn-more">=> more</button>
                             </p>
                         </div>
                     </div>
@@ -108,7 +105,7 @@
         <div class="content-container">
             <div class="main__container">
                 <div class="main__text-container">
-                    <h2 class="main__title">
+                    <h2 class="title main__title">
                         Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
                         dignissim pellentesque felis
                     </h2>
@@ -140,10 +137,145 @@
             </div>
         </div>
     </main> <!-- Main section end-->
+
     <section class="subscribe">
         <div class="content-container">
-
+            <div class="subscribe__container">
+                <div class="subscribe__quote-container">
+                    <div class="circle-decorator circle-decorator--clr--black subscribe__circle-decorator"></div>
+                    <div class="subscribe__quote-text-container">
+                        <h2 class="title subscribe__quote-title">Donec nec justo eget</h2>
+                        <q class="subscribe__quote">
+                            " Ede semper est, vitae luctus metus libero eu augue. Morb sipo
+                            ipiscing, commodo quis, gravida  ... "<span class="subscribe__quote-source"> - Kohn Doe /
+                            company name</span>
+                        </q>
+                    </div>
+                </div>
+                <form action="#" class="subscribe__form">
+                    <label for="email" class="title subscribe__input-title">Morbi vitae luctus
+                    <input
+                            type="email"
+                            id="email"
+                            placeholder="enter your email id here ..."
+                            class="input subscribe__email-input">
+                    </label>
+                    <input type="submit"
+                           value="Subscribe →"
+                           class="btn btn--clr--black subscribe__submit-btn">
+                </form>
+            </div>
         </div>
-    </section>
+    </section> <!-- Subscribe section end-->
+
+    <div class="wrap">
+        <div class="content-container">
+            <div class="testimonial-contact-address-container">
+                <section class="testimonial">
+                    <h2 class="title testimonial__title">Nunc dignissim risu</h2>
+                    <div class="testimonial__card">
+                        <img src="./img/profile-pic-1.png" alt="Testimonial author picture" class="testimonial__profile-img">
+                        <p class="testimonial__text">
+                            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                            <button class="btn-more testimonial__btn-more">more =></button>
+                        </p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="./img/profile-pic-2.png" alt="Testimonial author picture"
+                             class="testimonial__profile-img">
+                        <p class="testimonial__text">
+                            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                            <button class="btn-more testimonial__btn-more">more =></button>
+                        </p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="./img/profile-pic-3.png" alt="Testimonial author picture"
+                             class="testimonial__profile-img">
+                        <p class="testimonial__text">
+                            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                            <button class="btn-more testimonial__btn-more">more =></button>
+                        </p>
+                    </div>
+                </section> <!-- Testimonial section end -->
+                <section class="contact">
+                    <h2 class="title contact__title">Nunc dignissim risu</h2>
+                    <form action="#" class="contact__form">
+                        <p class="contact__description">
+                            Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
+                        </p>
+                        <input type="text"
+                               placeholder="name ..."
+                               class="input contact__input"
+                        >
+                        <input type="email"
+                               placeholder="email ..."
+                               class="input contact__input"
+                        >
+                        <textarea
+                                name=""
+                                id=""
+                                placeholder="your query ..."
+                                class="contact__textarea">
+                </textarea>
+                        <input type="submit" value="Send →" class="btn btn--clr--red">
+                    </form>
+                </section>
+                <address class="address">
+                    <h2 class="title address__title">Aliquam tincidunt</h2>
+                    <ul class="address__items">
+                        <li class="address__item address__item--icon--house">
+                            <h4 class="address__item-title">Address</h4>
+                            <p class="address__street-address">
+                                some block, srteet number, city name, country
+                            </p>
+                        </li>
+                        <li class="address__item address__item--icon--phone">
+                            <h4 class="address__item-title">Phone</h4>
+                            <div class="address__links">
+                                <a class="address__link" href="tel:(000) 777 777 7777">(000) 777 777 7777</a>
+                                <a class="address__link" href="tel:(000) 888 888 8888">(000) 888 888 8888</a>
+                            </div>
+                        </li>
+                        <li class="address__item address__item--icon--envelope">
+                            <h4 class="address__item-title">Email us</h4>
+                            <div class="address__links">
+                                <a class="address__link" href="mailto: info@siteneme.com">info@siteneme.com</a>
+                                <a class="address__link" href="mailto: sales@sitename.com">sales@sitename.com</a>
+                                <a class="address__link" href="mailto: company@sitename.com">company@sitename.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </address> <!-- Address section end -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content-container">
+            <div class="footer__container">
+                <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="index.html" class="footer__link">Home</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__link">About</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__link">Services</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__link">Portfolio</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__link">Contact</a></li>
+                </ul>
+                <div class="footer__social-media">
+                    <a href="#" class="circle-decorator circle-decorator--clr--red footer__sm-link"></a>
+                    <a href="#" class="circle-decorator circle-decorator--clr--red footer__sm-link"></a>
+                    <a href="#" class="circle-decorator circle-decorator--clr--red footer__sm-link"></a>
+                </div>
+                <small class="footer__text">
+                        <span class="footer__designed-by">Designed by:
+                            <a class="footer__text-link footer__text-link--clr--red" href="http://alltemplateneeds.com">
+                                www.alltemplateneeds.com
+                            </a>
+                            /
+                        </span> Images from:
+                    <a href="http://wallpaperswide.com" class="footer__text-link"></a>
+                    www.wallpaperswide.com / Copyright(c) website name.
+                </small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
