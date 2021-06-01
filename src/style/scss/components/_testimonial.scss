@@ -1,0 +1,40 @@
+.testimonial {
+    max-width: 355px;
+    margin-bottom: 5rem;
+
+    @include lg {
+        margin: 0;
+    }
+
+    &__title {
+        margin-bottom: 56px;
+    }
+
+    &__card {
+        display: flex;
+
+        &:not(:last-of-type) {
+            margin-bottom: 58px;
+        }
+    }
+
+    &__profile-img {
+        width: 80px;
+        height: 80px;
+        margin-right: 29px;
+        border-radius: 50%;
+    }
+
+    &__text {
+        margin-top: 12px;
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: $clr-gray-dark;
+        line-height: 25px;
+    }
+
+    &__btn-more {
+        margin-top: 5px;
+        display: block;
+    }
+}

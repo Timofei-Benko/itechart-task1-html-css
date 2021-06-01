@@ -1,0 +1,8 @@
+.testimonial-contact-address-container {
+    padding: 70px 0 60px 0;
+
+    @include lg {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,14 @@
+.btn-more {
+    display: inline;
+    border: 0;
+    background: transparent;
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: $clr-red;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

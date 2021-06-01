@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $clr-black;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 205px;
+        padding: 81px 0 113px 0;
+    }
+
+    &__nav {
+        font-family: $font-secondary;
+        font-size: 14px;
+    }
+
+    &__nav-item {
+        position: relative;
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &:not(:last-of-type):after {
+            content: "    /";
+            position: absolute;
+            right: -10px;
+            color: $clr-gray;
+        }
+    }
+
+    &__link {
+        color: $clr-gray;
+
+        &:visited {
+            color: $clr-gray;
+        }
+    }
+
+    &__text {
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,92 @@
+.subscribe {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 30px 57px;
+        background-color: $clr-red;
+        border-radius: 10px;
+
+        @include lg {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__quote-container {
+        display: flex;
+        margin-bottom: 2em;
+
+        @include lg {
+            margin-bottom: 0;
+        }
+    }
+
+    &__circle-decorator {
+        flex-shrink: 1;
+        margin-right: 1em;
+        background-image: url('../../img/icon-profile.png');
+    }
+
+    &__quote-text-container {
+        flex-shrink: 20;
+    }
+
+    &__quote-title {
+        margin-bottom: 24px;
+        color: $clr-white;
+    }
+
+    &__quote {
+        quotes: none;
+        font-family: $font-secondary;
+        font-size: 16px;
+        color: $clr-white;
+
+        &-source {
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include lg {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-left: 2em;
+        }
+    }
+
+    &__input-title {
+        display: inline-block;
+        color: $clr-white;
+    }
+
+    &__email-input {
+        width: 100%;
+        margin: 29px 0 1em;
+
+        @include lg {
+            max-width: 381px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__submit-btn {
+        width: 100%;
+        min-width: 121px;
+
+        @include lg {
+            margin-left: 1em;
+            max-width: 121px;
+        }
+    }
+}
