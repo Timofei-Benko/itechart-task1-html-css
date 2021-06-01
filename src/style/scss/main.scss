@@ -1,14 +1,28 @@
+// Config
+
 @import "config/normalize";
 @import "config/mixins";
-//@import "config/variables";
 @import "config/fonts";
 @import "config/colors";
 
+// Common
 @import "components/base-layout";
 @import "components/content-container";
+
+@import "components/circle-decorator";
+@import "components/btn";
+@import "components/btn-more";
+@import "components/title";
+@import "components/input";
+
+// Unique
 @import "components/nav";
 @import "components/header";
 @import "components/services";
-@import "components/circle-decorator";
 @import "components/main";
-@import "components/btn";
+@import "components/subscribe";
+@import "components/testimonial-contact-address-container";
+@import "components/testimonial";
+@import "components/contact";
+@import "components/address";
+@import "components/footer";
