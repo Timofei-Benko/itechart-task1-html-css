@@ -1,0 +1,31 @@
+.btn {
+    --btn-height: 38px;
+
+    display: block;
+    height: var(--btn-height);
+    border-radius: 25px;
+    font-family: $font-primary;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: var(--btn-height);
+    letter-spacing: 1px;
+    transition: background-color .2s ease-in-out;
+
+    &--clr--red {
+        background-color: $clr-red;
+
+        &:hover {
+            background-color: #c63d37;
+        }
+    }
+
+    &--clr--black {
+        background-color: $clr-black;
+
+        &:hover {
+            background-color: #c63d37;
+        }
+    }
+}
