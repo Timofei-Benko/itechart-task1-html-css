@@ -1,4 +1,9 @@
 body {
     font-family: $font-primary;
-    background-color: #FFFFFF;
+    background-color: $clr-white;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
 }
