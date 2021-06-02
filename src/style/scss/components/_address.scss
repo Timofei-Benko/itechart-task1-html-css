@@ -3,7 +3,9 @@
     font-style: normal;
 
     &__title {
+        display: block;
         margin-bottom: 56px;
+        font-weight: 600;
     }
 
     &__items {
@@ -43,7 +45,9 @@
     }
 
     &__item-title {
+        display: block;
         margin-bottom: 10px;
+        font-weight: 600;
         color: $clr-red;
     }
 
