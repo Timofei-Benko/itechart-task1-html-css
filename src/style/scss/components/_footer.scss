@@ -4,28 +4,52 @@
     background-color: $clr-black;
 
     &__container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas:
+                'navigation social-media'
+                'copyright copyright';
+        width: 100%;
         min-height: 205px;
         padding: 81px 0 113px 0;
+
+        @include sm {
+            grid-template-areas:
+                'navigation social-media'
+                'copyright social-media';
+        }
     }
 
     &__nav {
+        grid-area: navigation;
+        display: flex;
+        flex-direction: column;
         font-family: $font-secondary;
         font-size: 14px;
+
+        @include sm {
+            flex-direction: row;
+            align-self: flex-end;
+        }
     }
 
     &__nav-item {
         position: relative;
+
         &:not(:last-of-type) {
-            margin-bottom: 2rem;
+            margin-bottom: 1em;
+
+            @include sm {
+                margin: 0 40px 0 0;
+            }
         }
 
-        &:not(:last-of-type):after {
-            content: "    /";
-            position: absolute;
-            right: -10px;
-            color: $clr-gray;
+        @include sm {
+            &:not(:last-of-type):after {
+                content: "/";
+                position: absolute;
+                right: -25px;
+                color: $clr-gray-dark;
+            }
         }
     }
 
@@ -35,9 +59,75 @@
         &:visited {
             color: $clr-gray;
         }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__social-media {
+        grid-area: social-media;
+        display: flex;
+        align-self: end;
+        justify-self: right;
+
+        @include sm {
+            align-self: center;
+        }
+    }
+
+    &__sm-link {
+        height: 44px;
+        width: 44px;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            background-color: #c63d37;
+        }
+
+        &--icon--facebook {
+            background-image: url("../../img/icon-facebook.png");
+        }
+
+        &--icon--twitter {
+            background-image: url("../../img/icon-twitter.png");
+        }
+
+        &--icon--linkedin {
+            background-image: url("../../img/icon-linkedin.png");
+        }
     }
 
     &__text {
+        grid-area: copyright;
         align-self: flex-end;
+        margin-top: 18px;
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: $clr-gray-dark;
+    }
+
+    &__designed-by {
+        color: $clr-red;
+    }
+
+    &__text-link {
+
+        &--clr--red {
+            color: $clr-red;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:visited {
+            color: inherit;
+        }
     }
 }
